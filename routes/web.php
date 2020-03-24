@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/lineMessaging', 'LineMessaging');
+Route::post('/Hook', 'LineMessaging@hook');
