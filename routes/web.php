@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::post('/Hook', 'LineMessaging@hook');
+Route::get('/login', 'Auth\LoginController@index');
