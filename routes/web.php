@@ -17,5 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// line api
 Route::post('/Hook', 'LineMessaging@hook');
+// login
 Route::get('/login', 'Auth\LoginController@index');
+// login
+Route::get('/register', 'Auth\RegisterController@index');
